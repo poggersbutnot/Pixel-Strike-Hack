@@ -7,10 +7,10 @@
 ## The first pixel strike 3d hack made in python. (8.9.0)
 
 ## Script Features
--Bot health hack (optional)
--Bot unlimited game time
--Unlimited ammo (goes up if u shoot)
--Anti-Ban, Anti-Warn, Anti-Banv2, Anti-Kick, Anti-SpeedHackDetector (beta)
+- Bot health hack (optional)
+- Bot unlimited game time
+- Unlimited ammo (goes up if u shoot)
+- Anti-Ban, Anti-Warn, Anti-Banv2, Anti-Kick, Anti-SpeedHackDetector (beta)
 
 
 ## Games steam link:
