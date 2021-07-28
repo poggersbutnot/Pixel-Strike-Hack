@@ -3,7 +3,6 @@ from requests import get
 from webbrowser import open
 from sys import exit
 
-amt = 0
 QIU = False #quit_if_update
 
 print(get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/updates').text.replace('\n', ''))
