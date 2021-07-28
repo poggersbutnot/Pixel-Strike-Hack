@@ -1,5 +1,4 @@
-# Pixel-Strike-Hack
-# Info  <img align="right" src="https://cdn.discordapp.com/avatars/523597014030876672/c764dea3c375986b8d58915d49fe99b8.png"/>
+# Pixel-Strike-Hack <img align="right" src="https://cdn.discordapp.com/avatars/523597014030876672/c764dea3c375986b8d58915d49fe99b8.png"/>
 [![pog](https://img.shields.io/badge/main-script-brightgreen)](https://github.com/poggersbutnot/spam-war-robots-servers/blob/main/main.py)
 
 **Just gotta say, don't abuse this.**
