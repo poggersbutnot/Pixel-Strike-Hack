@@ -1,12 +1,13 @@
 from pymem import Pymem, process
-from requests import get
+from requests import post, get, put
 from webbrowser import open
 from sys import exit
+
 
 QIU = False #quit_if_update
 
 print(get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/updates').text.replace('\n', ''))
-ver = """1.0
+ver = """1.1
 """
 if ver != get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/version').text:
     print("New update available...")
@@ -34,10 +35,12 @@ warn = (0x3ABF7B0)
 ban2 = (0x3ABE450)
 speedHackDetector = (0x3FA55D0)
 time = (0x188ECC0)
+UpdatesChecker = (0x1718700)
+WarningMenu = (0xA13480)
 # Bots only health = (0x2087C6A)
 
 
-features = "Game time, Anti-Ban, Anti-Warn, Anti-Kick And incase that all failes, 0 ban time duration!"
+features = "Stop Update Check, Anti-Warn, Game time, Anti-Ban, Anti-Warn2, Anti-Kick And incase that all failes, 0 ban time duration!"
 
 
 class Main(object):
@@ -51,12 +54,12 @@ class Main(object):
             else:
                print("Infinite Ammo Added! Now Adding " + ''.join(features) + "... (Beta)."), pm.write_int(GameAssembly + show, 1465225360),
                pm.write_int(GameAssembly + ban, 242520208), pm.write_int(GameAssembly + warn, 136594631), pm.write_int(GameAssembly + ban2, 136594631),
-               pm.write_int(GameAssembly + speedHackDetector, 136594631), pm.write_float(GameAssembly + time, -2.674721742E29) #, pm.write_float(GameAssembly + health, -13827.9873)
+               pm.write_int(GameAssembly + speedHackDetector, 136594631), pm.write_float(GameAssembly + time, -2.674721742E29),
+               pm.write_int(GameAssembly + UpdatesChecker, 136594631), pm.write_float(GameAssembly + WarningMenu, 3.239628125E-29)#, pm.write_float(GameAssembly + health, -13827.9873)
         except Exception:
-            print("Please run PS3D before using this.")
+            print("An unexpected error occured.")
 
         
         
 
 Main()
-
