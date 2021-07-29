@@ -6,7 +6,7 @@ from sys import exit
 
 QIU = False #quit_if_update
 
-def announcments():
+def announcments() -> str:
     return get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/updates').text.replace('\n', '')
 
 print(announcments())
