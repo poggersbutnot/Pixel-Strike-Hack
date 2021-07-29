@@ -56,7 +56,7 @@ IncBots2 = (0x28B3682)
 # Bots only health = (0x2087C6A)
 
 
-features = "Game time, Anti-Ban, Anti-Warn, Anti-Kick And incase that all failes, 0 ban time duration!"
+features = "Stop UpdateCheck, Add Unlimited Bot Enemies, Game time, Anti-Ban, Anti-Warn, Anti-Kick And incase that all failes, 0 ban time duration!"
 
 
 class Main(object):
