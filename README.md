@@ -10,6 +10,8 @@
 - Bot unlimited game time
 - Unlimited ammo (goes up if u shoot)
 - Anti-Ban, Anti-Warn, Anti-Banv2, Anti-Kick, Anti-SpeedHackDetector (beta)
+- Play while not in the latest version (beta)
+- Unlimited enemies can be added in the bots area.
 
 
 ## Games steam link:
