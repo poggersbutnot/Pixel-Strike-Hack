@@ -10,7 +10,7 @@ def announcments() -> str:
     return get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/updates').text.replace('\n', '')
 
 print(announcments())
-ver = """1.2
+ver = """1.3
 """
 verUrl = get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/version')
 
