@@ -10,7 +10,7 @@ def announcments() -> str:
     return get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/updates').text.replace('\n', '')
 
 print(announcments())
-ver = """1.5
+ver = """1.6
 """
 verUrl = get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/version')
 
@@ -61,6 +61,8 @@ WarningMenu = (0xA13480)
 IncBots = (0x28B3687)
 IncBots2 = (0x28B3682)
 FireRate = (0x6AB66B)
+IncFrnBots = (0x28B3717)
+IncFrnBots2 = (0x28B3712)
 # Bots only health = (0x2087C6A)
 
 
@@ -80,7 +82,8 @@ class Main(object):
                pm.write_int(GameAssembly + ban, 242520208), pm.write_int(GameAssembly + warn, 136594631), pm.write_int(GameAssembly + ban2, 136594631),
                pm.write_int(GameAssembly + speedHackDetector, 136594631), pm.write_float(GameAssembly + time, -2.674721742E29),
                pm.write_float(GameAssembly + WarningMenu, 3.239628125E-29), pm.write_float(GameAssembly + IncBots2, 1.736125965E37),
-               pm.write_float(GameAssembly + IncBots, 3.335481139E10), pm.write_float(GameAssembly + FireRate, -19.222)  #, pm.write_float(GameAssembly + health, -13827.9873)
+               pm.write_float(GameAssembly + IncBots, 3.335481139E10), pm.write_float(GameAssembly + FireRate, -19.222), pm.write_float(GameAssembly + IncFrnBots2, 1.736125965E37)
+               pm.write_float(GameAssembly + IncFrnBots, 3.335481139E10) #, pm.write_float(GameAssembly + health, -13827.9873)
         except Exception:
             print("Please run PS3D before using this.")
 
@@ -88,4 +91,6 @@ class Main(object):
         
 
 Main()
+
+
 
