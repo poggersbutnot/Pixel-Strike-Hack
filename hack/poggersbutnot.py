@@ -10,7 +10,7 @@ def announcments() -> str:
     return get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/updates').text.replace('\n', '')
 
 print(announcments())
-ver = """1.3
+ver = """1.4
 """
 verUrl = get('https://raw.githubusercontent.com/poggersbutnot/Pixel-Strike-Hack/main/info/version')
 
@@ -39,6 +39,14 @@ class UpdatesChecker(object):
 
 UpdatesChecker()
 
+def is_outdated() -> [str, bool]:
+    if get('http://pixelstrike3daws.com/new/version-info2.php', params = dict(platform=2, ver='8.9.0')).text == '{"ver":false,"msg":""}':
+        return 'This program is outdated... wait for poggersbutnot (me) to make a update', True
+    else:
+        return 'PS3D version is up to date...', False
+
+print(is_outdated()[0])
+
 pm = Pymem("PixelStrike3D.exe")
 GameAssembly = process.module_from_name(pm.process_handle, "GameAssembly.dll").lpBaseOfDll
 
@@ -56,7 +64,7 @@ IncBots2 = (0x28B3682)
 # Bots only health = (0x2087C6A)
 
 
-features = "Stop UpdateCheck, Add Unlimited Bot Enemies, Game time, Anti-Ban, Anti-Warn, Anti-Kick And incase that all failes, 0 ban time duration!"
+features = "Game time, Anti-Ban, Anti-Warn, Anti-Kick And incase that all failes, 0 ban time duration!"
 
 
 class Main(object):
