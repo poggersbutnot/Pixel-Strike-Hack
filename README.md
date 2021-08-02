@@ -1,5 +1,5 @@
 # Pixel-Strike-Hack <img align="right" src="https://cdn.discordapp.com/avatars/523597014030876672/a_aa5bf5e92da22690475f566a2f555d6a.gif"/>
-[![pog](https://img.shields.io/badge/main-script-brightgreen)](https://github.com/poggersbutnot/spam-war-robots-servers/blob/main/main.py)
+[![pog](https://img.shields.io/badge/main-script-brightgreen)](https://github.com/poggersbutnot/Pixel-Strike-Hack/blob/main/hack/poggersbutnot.py)
 
 **Just gotta say, don't abuse this.**
 
