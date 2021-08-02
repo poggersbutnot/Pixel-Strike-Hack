@@ -12,6 +12,18 @@
 - Anti-Ban, Anti-Warn, Anti-Banv2, Anti-Kick, Anti-SpeedHackDetector (beta)
 - Play while not in the latest version (beta)
 - Unlimited enemies can be added in the bots area.
+- Rapid Fire
+- Unlimited Friendly Bots
+
+# API Version Usage:
+- Rapid Fire
+```python
+from poggersbutapi import MM
+
+menu = MM()
+menu.anti_cheat #disables anti_cheat (not guaranteed)
+menu.rapid_fire()
+```
 
 
 ## Games steam link:
