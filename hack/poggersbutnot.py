@@ -57,7 +57,6 @@ warn = (0x3ABF7B0)
 ban2 = (0x3ABE450)
 speedHackDetector = (0x3FA55D0)
 time = (0x188ECC0)
-UpdatesChecker = (0x1718700)
 WarningMenu = (0xA13480)
 IncBots = (0x28B3687)
 IncBots2 = (0x28B3682)
@@ -79,8 +78,8 @@ class Main(object):
                print("Infinite Ammo Added! Now Adding " + ''.join(features) + "... (Beta)."), pm.write_int(GameAssembly + show, 1465225360),
                pm.write_int(GameAssembly + ban, 242520208), pm.write_int(GameAssembly + warn, 136594631), pm.write_int(GameAssembly + ban2, 136594631),
                pm.write_int(GameAssembly + speedHackDetector, 136594631), pm.write_float(GameAssembly + time, -2.674721742E29),
-               pm.write_int(GameAssembly + UpdatesChecker, 136594631), pm.write_float(GameAssembly + WarningMenu, 3.239628125E-29),
-               pm.write_float(GameAssembly + IncBots2, 1.736125965E37), pm.write_float(GameAssembly + IncBots, 3.335481139E10)  #, pm.write_float(GameAssembly + health, -13827.9873)
+               pm.write_float(GameAssembly + WarningMenu, 3.239628125E-29), pm.write_float(GameAssembly + IncBots2, 1.736125965E37),
+               pm.write_float(GameAssembly + IncBots, 3.335481139E10) #, pm.write_float(GameAssembly + health, -13827.9873)
         except Exception:
             print("Please run PS3D before using this.")
 
